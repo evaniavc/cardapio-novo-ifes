@@ -5,10 +5,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-image: url(../img/WhatsApp\ Image\ 2023-04-20\ at\ 11.34.05.jpeg);
-
-  /* background: #b4ffb9; */
-  background-repeat: repeat-x;
+  background-image: linear-gradient(#a8e0ab, #2ba033);
 }
 
 a {
