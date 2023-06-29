@@ -4,13 +4,15 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>CARDÁPIO - IFES</title>
-
   <link href="assets/style/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/style/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link rel="stylesheet"
     href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
   <header id="header" class="header fixed-top d-flex align-items-center">
@@ -57,8 +59,11 @@
     <div class="pagetitle">
       <div class="data">
         <script>
-          date = new Date().toLocaleDateString();
-          document.write(date);
+          d = new Date();
+          day = ['DOMINGO', 'SEGUNDA-FEIRA', 'TERÇA-FEIRA', 'QUARTA-FEIRA', 'QUINTA-FEIRA', 'SEXTA-FEIRA', 'SÁBADO'];
+          month = ['JANEIRO', 'FEVEREIRO', 'MARÇO', 'ABRIL', 'MAIO', 'JUNHO', 'JULHO', 'AGOSTO', 'SETEMBRO', 'OUTUBRO', 'NOVEMBRO', 'DEZEMBRO'];
+          today = day[d.getDay()] + ' - ' + d.getDate() + ' DE ' + month[d.getMonth()];
+          document.write(today);
         </script>
       </div>
     </div>
@@ -173,6 +178,7 @@
   <script src="assets/style/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/main.js"></script>
   <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <!-- <script src="assets/js/script.js"></script> -->
 
 </body>
 </html>
